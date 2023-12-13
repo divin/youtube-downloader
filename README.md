@@ -28,9 +28,4 @@ A simple, yet powerful 💪 app to download YouTube videos in various formats.
 Contributions, issues, and feature requests are welcome!
 
 ## 📃 License
-Distributed under the MIT License. See `LICENSE` for more information.
-
-## 📧 Contact
-Your Name - your.email@example.com
-
-Project Link: [https://github.com/your_username/your_project](https://github.com/your_username/your_project)
+Distributed under the GNU General Public License v3.0. See `LICENSE` for more information.
