@@ -1,6 +1,9 @@
 # 🎬 YouTube Downloader
 
-A simple, yet powerful 💪 app to download YouTube videos in various formats. 
+A simple, yet powerful 💪 app to download YouTube videos in various formats.
+
+## 📷 Screenshot
+![Screenshot](assets/screenshot.png)
 
 ## 🚀 Features
 - Download YouTube videos as MP4 🎞️ or MP3 🎵 files.
@@ -21,8 +24,10 @@ A simple, yet powerful 💪 app to download YouTube videos in various formats.
 
 ## 📦 Installation
 1. Clone this repository.
-2. Install the dependencies with `pip install -r requirements.txt`.
-3. Run the app with `python app.py`.
+2. Create a Python 3.10 virtual environment.
+3. Move into the cloned repository.
+4. Install the package with `pip install -e .`.
+5. Run the app with `python -m youtube_downloader`.
 
 ## 🙌 Contribution
 Contributions, issues, and feature requests are welcome!
