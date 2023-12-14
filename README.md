@@ -8,7 +8,7 @@ Here's a glimpse of the application in action!
 ![App Screenshot](assets/screenshot.png)
 
 ## 🌟 Key Features
-- 🎞️ Download YouTube videos as MP4 or MP3 files.
+- 🎞️ Download YouTube videos as video or audio files.
 - 📺 Select your preferred resolution for video downloads.
 - ⚡️ User-friendly interface for effortless downloads.
 
@@ -16,8 +16,8 @@ Here's a glimpse of the application in action!
 1. 📋 Copy the URL of the YouTube video you wish to download.
 2. 🚀 Launch the YouTube Downloader app.
 3. 📌 Paste the URL into the designated input field.
-4. 🔄 Select your desired format (MP4 or MP3).
-5. 🎚️ Choose the resolution (applicable for MP4 downloads).
+4. 🔄 Select your desired format (video or audio).
+5. 🎚️ Choose the resolution (applicable for video downloads).
 6. ⬇️ Click the 'Download' button and patiently wait for your download to complete (the file will be saved in the 'downloads' folder).
 7. 🎉 Voila! Enjoy your downloaded video or audio file!
 
@@ -34,6 +34,9 @@ Get YouTube Downloader up and running on your local machine in no time:
 4. 📦 Install the necessary packages with `pip install -e .`.
 5. 🏃‍♀️ Run the app using `python -m youtube-downloader`.
 6. 🌐 Head to the URL displayed in the terminal to start using the app.
+
+## 📝 Notes
+- The audio files are in the `.mp4` format, but they can be easily converted to `.mp3` if needed with a tool like [FFmpeg](https://ffmpeg.org).
 
 ## 🙌 Contribution
 Your contributions, issues, and feature requests are always welcome!

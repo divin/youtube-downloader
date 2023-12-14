@@ -16,12 +16,12 @@ def download_from_youtube(
     if file_name == "":
         raise ValueError("Please enter a valid file name.")
 
-    if not file_name.endswith(f".{file_type}"):
-        file_name = f"{file_name}.{file_type}"
+    if not file_name.endswith(".mp4"):
+        file_name = f"{file_name}.mp4"
 
     # Download video or audio
     yt = YouTube(url)
-    if file_type == "mp4":
+    if file_type == "Video":
         path_to_file = yt.streams.get_by_resolution(resolution=resolution).download(
             output_path="downloads", filename=file_name
         )
@@ -31,8 +31,8 @@ def download_from_youtube(
         )
 
     return (
-        gr.Video(value=path_to_file, visible=file_type == "mp4"),
-        gr.Audio(value=path_to_file, visible=file_type == "mp3"),
+        gr.Video(value=path_to_file, visible=file_type == "Video"),
+        gr.Audio(value=path_to_file, visible=file_type == "Audio"),
     )
 
 
@@ -46,7 +46,9 @@ def get_app() -> gr.Interface:
         with gr.Row():
             with gr.Column():
                 url = gr.Textbox(lines=1, label="🔗 YouTube URL")
-                file_type = gr.Dropdown(value="mp4", choices=["mp4", "mp3"], label="File Type")
+                file_type = gr.Dropdown(
+                    value="Video", choices=["Video", "Audio"], label="File Type"
+                )
                 resolution = gr.Dropdown(
                     value="720p",
                     choices=["720p", "480p", "360p"],
